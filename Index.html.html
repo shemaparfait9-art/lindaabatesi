@@ -1,0 +1,396 @@
+<!-- FILE: homepage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Women for Women Rwanda — Home</title>
+  <style>
+    :root{--accent:#166534;--accent-2:#0f5132;--muted:#6b7280;--bg:#f7faf7;--card:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#102a17;background:var(--bg)}
+    a{color:var(--accent)}
+    .site-wrap{max-width:1200px;margin:0 auto;padding:18px}
+    header{background:#fff;border-bottom:1px solid #e6eef0;position:sticky;top:0;z-index:50}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:52px;height:52px;border-radius:8px;object-fit:cover}
+    nav a{margin-right:14px;color:#163e2e;text-decoration:none;padding:8px;border-radius:8px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin:22px 0}
+    .hero-left{background:linear-gradient(180deg,rgba(13,78,44,0.9),rgba(13,78,44,0.6)),url('https://images.unsplash.com/photo-1529338296731-3e5f0b6d91b8?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:#fff;padding:48px;border-radius:12px}
+    .hero-left h1{margin:0;font-size:32px;line-height:1.05}
+    .hero-left p{margin:12px 0 18px;color:rgba(255,255,255,0.92)}
+    .hero-right{background:#fff;padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(8,32,18,0.06)}
+
+    .section{margin:28px 0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 18px rgba(11,38,22,0.04)}
+    .kpis{display:flex;gap:12px;margin-top:14px}
+    .kpi{flex:1;background:linear-gradient(180deg,#fff,#f6fff6);padding:18px;border-radius:10px;text-align:center}
+
+    .stories{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    .story{background:#fff;padding:16px;border-radius:12px}
+
+    footer{background:var(--accent-2);color:#dff6e9;padding:28px;border-radius:8px;margin:30px 0}
+
+    @media(max-width:1000px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.stories{grid-template-columns:1fr}.nav-inner{padding:12px}}
+    @media(max-width:600px){.cards{grid-template-columns:1fr}.hero-left{padding:28px}.brand img{width:44px;height:44px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="brand"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=60" alt="logo"><div><strong>Women for Women Rwanda</strong><div style="font-size:12px;color:var(--muted)">Empowering women. Building communities.</div></div></div>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="team.html">Team</a>
+        <a class="btn" href="#">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site-wrap">
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Help Women Thrive Socially and Economically</h1>
+          <p>Strong training, mentorship and market linkages that transform lives. Stronger women. Stronger nation.</p>
+          <div style="display:flex;gap:12px"><a class="btn" href="programs.html">Join a Program</a><a href="about.html" style="padding:10px 14px;border-radius:8px;background:transparent;border:2px solid rgba(255,255,255,0.12);color:#fff;text-decoration:none">Learn more</a></div>
+        </div>
+        <aside class="hero-right">
+          <h4 style="margin:0 0 8px">Support the Movement</h4>
+          <p style="margin:0 0 12px;color:var(--muted)">Your gift helps women access training, savings groups and market linkages.</p>
+          <a class="btn" href="#">Donate Now</a>
+        </aside>
+      </section>
+
+      <section class="section">
+        <h2>Our Programs</h2>
+        <div class="cards" style="margin-top:12px">
+          <div class="card"><h3>Core Program</h3><p style="color:var(--muted)">12-month training covering health, rights and financial literacy.</p></div>
+          <div class="card"><h3>Entrepreneurship Program</h3><p style="color:var(--muted)">Business skills, mentorship and support for women aged 18–55.</p></div>
+          <div class="card"><h3>Market Linkages</h3><p style="color:var(--muted)">Connecting graduates with buyers and markets for sustained income.</p></div>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi"><h3 style="color:var(--accent)">80,000+</h3><div style="color:var(--muted)">Women Empowered</div></div>
+          <div class="kpi"><h3 style="color:var(--accent)">143</h3><div style="color:var(--muted)">VSLAs</div></div>
+          <div class="kpi"><h3 style="color:var(--accent)">170</h3><div style="color:var(--muted)">Men Engaged</div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Success Stories</h2>
+        <div class="stories">
+          <div class="story">
+            <h3>Kirungi Viviane</h3>
+            <p style="color:var(--muted)">“I advise women to work hard, save for the future, start small and grow gradually. I thank Women for Women Rwanda for their great support.”</p>
+            <p><a href="programs.html">Read more</a></p>
+          </div>
+          <aside style="display:flex;flex-direction:column;gap:12px">
+            <div class="card"><h4>Nikuze Esther</h4><p style="color:var(--muted);margin:0">A young mother who regained hope through training and VSLA support.</p><p style="margin-top:8px"><a href="#">Read more</a></p></div>
+            <div class="card"><h4>Field visit: Harvest day</h4><p style="color:var(--muted);margin:0">Photos and clips from cooperative harvests.</p></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top:30px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px">
+        <div>
+          <strong style="color:var(--accent)">Women for Women Rwanda</strong>
+          <p style="margin:8px 0 0;color:#dff6e9">P.O. Box Kigali · info@womenforwomen.rw · +250 788 000 000</p>
+        </div>
+        <div style="text-align:right;color:#dff6e9">
+          <div><a href="#" style="color:#dff6e9;margin-right:12px">Facebook</a><a href="#" style="color:#dff6e9;margin-right:12px">Twitter</a><a href="#" style="color:#dff6e9">Instagram</a></div>
+          <small>© 2025 Women for Women Rwanda</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+<!-- FILE: about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Women for Women Rwanda</title>
+  <style>
+    :root{--accent:#166534;--muted:#6b7280;--bg:#f7faf7}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:var(--bg);color:#102a17}
+    .site{max-width:1100px;margin:0 auto;padding:18px}
+    header{background:#fff;border-bottom:1px solid #e6eef0}
+    .hero{display:flex;gap:18px;align-items:center;margin:20px 0}
+    .hero .text{flex:1}
+    .hero img{width:420px;height:260px;object-fit:cover;border-radius:12px}
+    .accordion .item{background:#fff;padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 6px 14px rgba(0,0,0,0.04)}
+    .acc-head{display:flex;justify-content:space-between;cursor:pointer;padding:8px 4px}
+    .acc-body{padding:8px 4px;display:none;color:var(--muted)}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    .value{background:#fff;padding:12px;border-radius:10px;text-align:center}
+    footer{background:#042617;color:#dff6e9;padding:20px;border-radius:8px;margin-top:18px}
+    @media(max-width:900px){.hero{flex-direction:column}.hero img{width:100%;height:220px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0"><div><strong>Women for Women Rwanda</strong></div><nav><a href="homepage.html">Home</a> • <a href="about.html">About</a> • <a href="programs.html">Programs</a></nav></div>
+  </header>
+
+  <div class="site">
+    <main>
+      <section class="hero">
+        <div class="text">
+          <h1>Who we are</h1>
+          <p>Women for Women Rwanda is a community-driven organization that empowers vulnerable and marginalized women across Rwanda. We combine social support, economic training, and leadership development to help women regain dignity and achieve independence.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd?auto=format&fit=crop&w=1200&q=80" alt="women training">
+      </section>
+
+      <section style="margin-top:18px">
+        <h2>Mission, Vision & Core Values</h2>
+        <div class="accordion">
+          <div class="item">
+            <div class="acc-head" onclick="toggleAcc(1)"><strong>Mission</strong><span id="m1">+</span></div>
+            <div id="mb1" class="acc-body">We are a national organization that aims to empower women and girls in Rwanda to break the cycle of poverty and social exclusion, promoting better health, education and social conditions.</div>
+          </div>
+
+          <div class="item">
+            <div class="acc-head" onclick="toggleAcc(2)"><strong>Vision</strong><span id="m2">+</span></div>
+            <div id="mb2" class="acc-body">We envision a society where women and girls are socio-economically empowered to enable communities for sustainable development.</div>
+          </div>
+
+          <div class="item">
+            <div class="acc-head" onclick="toggleAcc(3)"><strong>Core Values</strong><span id="m3">+</span></div>
+            <div id="mb3" class="acc-body">
+              <div class="values">
+                <div class="value"><strong>Integrity</strong><p style="margin-top:8px;color:var(--muted)">Honesty and ethical conduct.</p></div>
+                <div class="value"><strong>Teamwork</strong><p style="margin-top:8px;color:var(--muted)">Delivering as one team.</p></div>
+                <div class="value"><strong>Respect</strong><p style="margin-top:8px;color:var(--muted)">Mutual respect for diversity.</p></div>
+                <div class="value"><strong>Accountability</strong><p style="margin-top:8px;color:var(--muted)">Taking responsibility for impact.</p></div>
+                <div class="value"><strong>Dignity</strong><p style="margin-top:8px;color:var(--muted)">Representing with dignity.</p></div>
+                <div class="value"><strong>Excellence</strong><p style="margin-top:8px;color:var(--muted)">Delivering high quality work.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h2>Our Team</h2>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+          <div style="background:#fff;padding:12px;border-radius:10px;text-align:center"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" style="width:100%;height:180px;object-fit:cover;border-radius:8px" alt=""/><h4 style="margin:8px 0 0">Linda Abatesi</h4><div style="color:var(--muted)">Program Manager</div></div>
+          <div style="background:#fff;padding:12px;border-radius:10px;text-align:center"><img src="https://images.unsplash.com/photo-1545996124-1f9d6a0c7b8d?auto=format&fit=crop&w=400&q=60" style="width:100%;height:180px;object-fit:cover;border-radius:8px" alt=""/><h4 style="margin:8px 0 0">Sarah Kirabo</h4><div style="color:var(--muted)">Head of Field Ops</div></div>
+          <div style="background:#fff;padding:12px;border-radius:10px;text-align:center"><img src="https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=400&q=60" style="width:100%;height:180px;object-fit:cover;border-radius:8px" alt=""/><h4 style="margin:8px 0 0">Ariane Sugira</h4><div style="color:var(--muted)">M&E & Research</div></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer style="margin-top:18px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding:12px;background:#042617;color:#dff6e9;border-radius:8px">
+        <div><strong>Women for Women Rwanda</strong><p style="margin-top:8px;color:#dff6e9">P.O. Box Kigali · info@womenforwomen.rw</p></div>
+        <div style="text-align:right;color:#dff6e9"><a href="#" style="color:#dff6e9;margin-right:10px">Facebook</a><a href="#" style="color:#dff6e9">Instagram</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleAcc(i){var b=document.getElementById('mb'+i);var c=document.getElementById('m'+i); if(b.classList.contains('show')){b.classList.remove('show');c.textContent='+'}else{b.classList.add('show');c.textContent='−'}}
+  </script>
+</body>
+</html>
+
+
+<!-- FILE: programs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programs — Women for Women Rwanda</title>
+  <style>
+    :root{--accent:#166534;--muted:#6b7280;--bg:#f7faf7}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:var(--bg);color:#102a17}
+    .site{max-width:1100px;margin:0 auto;padding:18px}
+    header{background:#fff;border-bottom:1px solid #e6eef0}
+    .two-col{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    .program{background:#fff;padding:18px;border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,0.04);margin-bottom:16px}
+    .side{background:linear-gradient(180deg,#fff,#f6fff6);padding:18px;border-radius:12px}
+    @media(max-width:900px){.two-col{grid-template-columns:1fr}.program img{width:100%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0"><div><strong>Women for Women Rwanda</strong></div><nav><a href="homepage.html">Home</a> • <a href="programs.html">Programs</a> • <a href="about.html">About</a></nav></div>
+  </header>
+
+  <div class="site">
+    <main>
+      <h1>Programs & Impact</h1>
+      <div class="two-col" style="margin-top:12px">
+        <div>
+          <div class="program">
+            <h3>Core 12-month Program</h3>
+            <div style="display:flex;gap:12px;align-items:flex-start;margin-top:8px">
+              <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=520&q=80" alt="" style="width:220px;height:140px;object-fit:cover;border-radius:10px"/>
+              <div>
+                <p style="color:var(--muted)">Four modules: health & wellbeing, economic empowerment, rights & leadership, and business skills. Includes VSLA formation, stipends and mentorship support.</p>
+                <p style="margin-top:8px;color:var(--muted)"><strong>Who it serves:</strong> Vulnerable women, survivors and young mothers in rural and semi-urban areas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="program">
+            <h3>Entrepreneurship Skills Program</h3>
+            <div style="display:flex;gap:12px;align-items:center;margin-top:8px">
+              <img src="https://images.unsplash.com/photo-1533850595623-1f6a32d0f0b9?auto=format&fit=crop&w=520&q=80" alt="" style="width:220px;height:140px;object-fit:cover;border-radius:10px"/>
+              <div style="color:var(--muted)">Short practical trainings in tailoring, food processing and agribusiness. Graduates receive mentorship and market access support.</div>
+            </div>
+          </div>
+
+          <div class="program">
+            <h3>Market Linkages</h3>
+            <p style="color:var(--muted)">We connect graduates with buyers, support product quality, packaging and business coaching to scale income opportunities.</p>
+          </div>
+        </div>
+
+        <aside class="side">
+          <h4>Program Highlights</h4>
+          <ul style="color:var(--muted)">
+            <li>12-month core curriculum</li>
+            <li>VSLA setup and digitization</li>
+            <li>Access to mentorship and markets</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <footer style="margin-top:28px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#042617;color:#dff6e9;border-radius:8px">
+        <div><strong>Women for Women Rwanda</strong><p style="margin:6px 0 0;color:#dff6e9">P.O. Box Kigali · info@womenforwomen.rw</p></div>
+        <div style="color:#dff6e9">© 2025 Women for Women Rwanda</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+<!-- FILE: impact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impact — Women for Women Rwanda</title>
+  <style>
+    :root{--accent:#166534;--muted:#6b7280;--bg:#f7faf7}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:var(--bg);color:#102a17}
+    .site{max-width:1100px;margin:0 auto;padding:18px}
+    header{background:#fff;border-bottom:1px solid #e6eef0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .kpi{background:#fff;padding:18px;border-radius:12px;text-align:center;box-shadow:0 8px 18px rgba(0,0,0,0.04)}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0"><div><strong>Women for Women Rwanda</strong></div><nav><a href="homepage.html">Home</a> • <a href="impact.html">Impact</a> • <a href="programs.html">Programs</a></nav></div>
+  </header>
+
+  <div class="site">
+    <main>
+      <h1>Our Impact</h1>
+      <p style="color:var(--muted)">Measured results from our programs across districts and communities.</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="kpi"><h2 style="color:var(--accent);margin:6px 0">80,000+</h2><div style="color:var(--muted)">Women supported</div></div>
+        <div class="kpi"><h2 style="color:var(--accent);margin:6px 0">143</h2><div style="color:var(--muted)">VSLAs digitized</div></div>
+        <div class="kpi"><h2 style="color:var(--accent);margin:6px 0">170</h2><div style="color:var(--muted)">Men trained</div></div>
+      </div>
+
+      <section style="margin-top:18px">
+        <h2>Stories of Change</h2>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px">
+          <div style="background:#fff;padding:12px;border-radius:10px">A cooperative sold their first harvest and invested profits into school fees and a small shop.</div>
+          <div style="background:#fff;padding:12px;border-radius:10px">Digitization pilot led to increased savings and easier access to mobile money services for members.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top:28px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#042617;color:#dff6e9;border-radius:8px">
+        <div><strong>Women for Women Rwanda</strong><p style="margin:6px 0 0;color:#dff6e9">P.O. Box Kigali · info@womenforwomen.rw</p></div>
+        <div style="color:#dff6e9">© 2025 Women for Women Rwanda</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+<!-- FILE: team.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team — Women for Women Rwanda</title>
+  <style>
+    :root{--muted:#6b7280;--bg:#f7faf7}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:var(--bg);color:#102a17}
+    .site{max-width:1100px;margin:0 auto;padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .member{background:#fff;padding:12px;border-radius:10px;text-align:center;box-shadow:0 8px 16px rgba(0,0,0,0.04)}
+    .member img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site" style="display:flex;justify-content:space-between;align-items:center;padding:12px 0"><div><strong>Women for Women Rwanda</strong></div><nav><a href="homepage.html">Home</a> • <a href="about.html">About</a></nav></div>
+  </header>
+
+  <div class="site">
+    <main>
+      <h1>Our Team</h1>
+      <p style="color:var(--muted)">Board, staff and field teams who deliver our programmes.</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="member"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" alt=""/><h4 style="margin:8px 0 0">Linda Abatesi</h4><div style="color:var(--muted)">Program Manager</div></div>
+        <div class="member"><img src="https://images.unsplash.com/photo-1545996124-1f9d6a0c7b8d?auto=format&fit=crop&w=400&q=60" alt=""/><h4 style="margin:8px 0 0">Sarah Kirabo</h4><div style="color:var(--muted)">Head of Field Ops</div></div>
+        <div class="member"><img src="https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=400&q=60" alt=""/><h4 style="margin:8px 0 0">Ariane Sugira</h4><div style="color:var(--muted)">M&E & Research</div></div>
+      </div>
+    </main>
+
+    <footer style="margin-top:28px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:#042617;color:#dff6e9;border-radius:8px">
+        <div><strong>Women for Women Rwanda</strong><p style="margin:6px 0 0;color:#dff6e9">P.O. Box Kigali · info@womenforwomen.rw</p></div>
+        <div style="color:#dff6e9">© 2025 Women for Women Rwanda</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+<!-- INSTRUCTIONS -->
+<!--
+This canvas contains five export-ready HTML files as clearly separated code blocks (homepage.html, about.html, programs.html, impact.html, team.html).
+To export: copy each block between the FILE comment markers into a separate .html file, or ask me and I will export/download them for you.
+
+If you want I can now:
+- Generate downloadable .html files for you (zipped) — say "export files".
+- Wire a simple donation form and mobile nav — say "add donation form".
+- Replace any images with specific Google images or your uploads — say "replace images".
+-->
